@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   // Replace with your OpenWeather API key
-  const API_KEY = "51d7226fc04e892762f4833f2800ec73";
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const getWeather = async () => {
     if (city.trim() === "") return;

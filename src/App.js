@@ -48,7 +48,7 @@ function App() {
         <div className="search-box">
           <input
             type="text"
-            placeholder="Enter city (e.g. Hyderabad, Sydney, Cape Town)"
+            placeholder="Enter City"
             value={city}
             onChange={(e) => setCity(e.target.value)}
             onKeyDown={(e) => {

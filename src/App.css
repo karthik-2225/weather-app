@@ -2,31 +2,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: #ffffff; /* White Background */
 }
 
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .weather-card {
-  width: 360px;
+  width: 380px;
   padding: 25px;
+  background: #87CEEB; /* Sky Blue */
   border-radius: 20px;
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.weather-card h1,
+.weather-card h2,
+.weather-card p {
+  color: #ffffff;
 }
 
 .search-box {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .search-box input {
@@ -35,20 +39,22 @@ body {
   border: none;
   border-radius: 10px;
   outline: none;
+  font-size: 16px;
 }
 
 .search-box button {
   margin-left: 10px;
   padding: 10px 15px;
   border: none;
-  background: #0077ff;
-  color: white;
   border-radius: 10px;
+  background: #0056b3;
+  color: white;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .search-box button:hover {
-  background: #005fd1;
+  background: #003f88;
 }
 
 .weather-info img {
@@ -58,4 +64,6 @@ body {
 .details {
   margin-top: 15px;
   text-align: left;
+  color: white;
+  line-height: 1.8;
 }
